@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c9ac90cc04e64bf10bd46717a0b6a0d1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_c9ac90cc04e64bf10bd46717a0b6a0d1" ></div>
+        
+</body>
+<script>    
+    
+            var map_c9ac90cc04e64bf10bd46717a0b6a0d1 = L.map(
+                "map_c9ac90cc04e64bf10bd46717a0b6a0d1",
+                {
+                    center: [40.756489872673846, -73.98626804351807],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e7dbab95e3bee1c1febd9f3f59fe3596 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c9ac90cc04e64bf10bd46717a0b6a0d1);
+        
+    
+            var poly_line_9af2d3bdeb527bee3f727a72163bd5c3 = L.polyline(
+                [[40.756489872673846, -73.98626804351807], [40.75044987008408, -73.99221103886612], [40.73891709652379, -74.0003429806233], [40.758728399405584, -73.97855791454388], [40.77527879887595, -73.8164991901522], [40.778936659294864, -73.96229820007625], [40.7714256153356, -73.97350072860723], [40.756489872673846, -73.98626804351807]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 15}
+            ).addTo(map_c9ac90cc04e64bf10bd46717a0b6a0d1);
+        
+    
+            var marker_fab9fcfa37a0c2d819dfa7d07a6da3a1 = L.marker(
+                [40.756489872673846, -73.98626804351807],
+                {}
+            ).addTo(map_c9ac90cc04e64bf10bd46717a0b6a0d1);
+        
+    
+            var icon_ee47b1a43e4590e210a0b8af6b7f4455 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "user", "iconColor": "white", "markerColor": "brown", "prefix": "fa"}
+            );
+            marker_fab9fcfa37a0c2d819dfa7d07a6da3a1.setIcon(icon_ee47b1a43e4590e210a0b8af6b7f4455);
+        
+    
+        var popup_0572e92227f4b5e3acd78537f8c3aafa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cb49d39bd428b6b643f5fcfafa710395 = $(`<div id="html_cb49d39bd428b6b643f5fcfafa710395" style="width: 100.0%; height: 100.0%;"><i>{Inicio:Times Square}</i></div>`)[0];
+            popup_0572e92227f4b5e3acd78537f8c3aafa.setContent(html_cb49d39bd428b6b643f5fcfafa710395);
+        
+
+        marker_fab9fcfa37a0c2d819dfa7d07a6da3a1.bindPopup(popup_0572e92227f4b5e3acd78537f8c3aafa)
+        ;
+
+        
+    
+    
+            var marker_165b275f281bff0a72a1249c8fb602a4 = L.marker(
+                [40.75044987008408, -73.99221103886612],
+                {}
+            ).addTo(map_c9ac90cc04e64bf10bd46717a0b6a0d1);
+        
+    
+        var popup_c1842e1f49bc96a363f5de38ef4c822e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_993f209f750fcdcad89d77beebbdea0a = $(`<div id="html_993f209f750fcdcad89d77beebbdea0a" style="width: 100.0%; height: 100.0%;"><i>{2:Madison Square Garden}</i></div>`)[0];
+            popup_c1842e1f49bc96a363f5de38ef4c822e.setContent(html_993f209f750fcdcad89d77beebbdea0a);
+        
+
+        marker_165b275f281bff0a72a1249c8fb602a4.bindPopup(popup_c1842e1f49bc96a363f5de38ef4c822e)
+        ;
+
+        
+    
+    
+            var marker_00c2d4c01400402f7d2536ddd7b1c079 = L.marker(
+                [40.73891709652379, -74.0003429806233],
+                {}
+            ).addTo(map_c9ac90cc04e64bf10bd46717a0b6a0d1);
+        
+    
+            var icon_8833398be8f0f879b70c73012c3a4b82 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_00c2d4c01400402f7d2536ddd7b1c079.setIcon(icon_8833398be8f0f879b70c73012c3a4b82);
+        
+    
+        var popup_74d2756489d0eac3af21247598cee78a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bb12777fb06b886aac926d923120c94a = $(`<div id="html_bb12777fb06b886aac926d923120c94a" style="width: 100.0%; height: 100.0%;"><i>{Restaurante:Dirty Bird To-Go. Estilo:Fried Chicken Joint}</i></div>`)[0];
+            popup_74d2756489d0eac3af21247598cee78a.setContent(html_bb12777fb06b886aac926d923120c94a);
+        
+
+        marker_00c2d4c01400402f7d2536ddd7b1c079.bindPopup(popup_74d2756489d0eac3af21247598cee78a)
+        ;
+
+        
+    
+    
+            var marker_7eaca9461f6a6e1892ed3fec9216fbb8 = L.marker(
+                [40.758728399405584, -73.97855791454388],
+                {}
+            ).addTo(map_c9ac90cc04e64bf10bd46717a0b6a0d1);
+        
+    
+        var popup_ddd945b3f0080c57abb03460c6f59b7d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_959f6839b15cd5fe80724ee303ef1ffe = $(`<div id="html_959f6839b15cd5fe80724ee303ef1ffe" style="width: 100.0%; height: 100.0%;"><i>{4:Rockefeller Center}</i></div>`)[0];
+            popup_ddd945b3f0080c57abb03460c6f59b7d.setContent(html_959f6839b15cd5fe80724ee303ef1ffe);
+        
+
+        marker_7eaca9461f6a6e1892ed3fec9216fbb8.bindPopup(popup_ddd945b3f0080c57abb03460c6f59b7d)
+        ;
+
+        
+    
+    
+            var marker_879cb3a74c59218b088a0123092b7fd5 = L.marker(
+                [40.77527879887595, -73.8164991901522],
+                {}
+            ).addTo(map_c9ac90cc04e64bf10bd46717a0b6a0d1);
+        
+    
+        var popup_e54c932ed91030d1fdf3c4570db0b962 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0ef112d774279679d3442072875ac2b4 = $(`<div id="html_0ef112d774279679d3442072875ac2b4" style="width: 100.0%; height: 100.0%;"><i>{5:Memorial park}</i></div>`)[0];
+            popup_e54c932ed91030d1fdf3c4570db0b962.setContent(html_0ef112d774279679d3442072875ac2b4);
+        
+
+        marker_879cb3a74c59218b088a0123092b7fd5.bindPopup(popup_e54c932ed91030d1fdf3c4570db0b962)
+        ;
+
+        
+    
+    
+            var marker_9064e74fca6014fb85b736638df4f12b = L.marker(
+                [40.778936659294864, -73.96229820007625],
+                {}
+            ).addTo(map_c9ac90cc04e64bf10bd46717a0b6a0d1);
+        
+    
+        var popup_aa27f5ea643c451367f50bcdfcaea6cf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7b611dde9e1743873548aa3b138d5334 = $(`<div id="html_7b611dde9e1743873548aa3b138d5334" style="width: 100.0%; height: 100.0%;"><i>{6:Metropolitan Museum of Art}</i></div>`)[0];
+            popup_aa27f5ea643c451367f50bcdfcaea6cf.setContent(html_7b611dde9e1743873548aa3b138d5334);
+        
+
+        marker_9064e74fca6014fb85b736638df4f12b.bindPopup(popup_aa27f5ea643c451367f50bcdfcaea6cf)
+        ;
+
+        
+    
+    
+            var marker_be51715e2b3a5396141117d8c00ff9a6 = L.marker(
+                [40.7714256153356, -73.97350072860723],
+                {}
+            ).addTo(map_c9ac90cc04e64bf10bd46717a0b6a0d1);
+        
+    
+        var popup_06074e7f178d807fc1e34fdd72a40fe7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b95058c75e66aba10b33b654f45d989d = $(`<div id="html_b95058c75e66aba10b33b654f45d989d" style="width: 100.0%; height: 100.0%;"><i>{7:Central Park}</i></div>`)[0];
+            popup_06074e7f178d807fc1e34fdd72a40fe7.setContent(html_b95058c75e66aba10b33b654f45d989d);
+        
+
+        marker_be51715e2b3a5396141117d8c00ff9a6.bindPopup(popup_06074e7f178d807fc1e34fdd72a40fe7)
+        ;
+
+        
+    
+    
+            var marker_f38b2d33d66ede2edc4299f2229db210 = L.marker(
+                [40.756489872673846, -73.98626804351807],
+                {}
+            ).addTo(map_c9ac90cc04e64bf10bd46717a0b6a0d1);
+        
+    
+            var div_icon_c0d3681c693e65d7ae7fdb907c4cc4c1 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 24pt\"\u003eTiempo total: 8.23horas\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [200, 86]});
+            marker_f38b2d33d66ede2edc4299f2229db210.setIcon(div_icon_c0d3681c693e65d7ae7fdb907c4cc4c1);
+        
+</script>

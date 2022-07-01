@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body_block %}
+
+<h1>Crear ruta</h1>
+
+<div class="center">
+
+    <form action = "{% url 'core:places' %}" method = "post" id="places">
+      {% csrf_token %}
+      <label for="inicio">Selecciona inicio de ruta:</label>
+      <select id="inicio" name="inicio">
+        {% for place in places %}
+          <option value="{{place}}">{{place}}</option>
+        {% endfor %}
+      </select>
+      <br></br>
+      <label for="places">Selecciona los lugares a visitar (CTRL para seleccion multiple, maximo 5):</label>
+      <select multiple="multiple" name="places" id="places" size=5>
+        {% for place in places %}
+          <option value="{{place}}">{{place}}</option>
+        {% endfor %}
+      </select>
+      <br></br>
+      <label for="restaurants">Selecciona tus gustos culinarios (CTRL para seleccion multiple, maximo 5):</label>
+      <select multiple="multiple" name="restaurants" id="restaurants" size=5>
+        {% for restaurant in restaurants %}
+          <option value="{{restaurant}}">{{restaurant}}</option>
+        {% endfor %}
+      </select>
+      <br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+
+
+{% endblock %}

@@ -1,0 +1,40 @@
+{% load static %}
+
+<html>
+  <head>
+      <title>
+          Core -
+          {% block title_block %}
+          TFG_JavierSanmiguel_2022
+          {% endblock %}
+      </title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" type='text/css' href="{% static 'css/estilos.css' %}">
+  </head>
+
+<body>
+  <header>
+    TFG
+    </br>
+  </header>
+
+  <nav>
+    <a href="{% url 'core:home' %}">Inicio</a>
+    <a href="{% url 'core:places' %}">Crear Ruta</a>
+  </nav></br>
+
+    <div class="wrapper">
+      <div class="container">
+        {% block body_block %}
+        {% endblock %}
+      </div>
+    </div>
+
+    <footer class="footer">
+        <p>Autor:</p>
+        <p>Javier Sanmiguel</br>javier.sanmiguelt@estudiante.uam.es </a></p>
+    </footer>
+  </body>
+
+
+</html>
